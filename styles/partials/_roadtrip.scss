@@ -1,0 +1,15 @@
+.roadtrip {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20%;
+}
+
+.banner {
+    height: 500px;
+    background-image: url("../assets/images/banner.jpg");
+    background-position: center;
+    background-size: cover;
+}

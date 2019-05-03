@@ -1,0 +1,19 @@
+.blog-layout {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: $alt-color;
+}
+
+.article {
+    width: 70%;
+    border: 5px solid $box-shadow-color;
+    border-right: 0px;
+    .image {
+        margin: -100px -200px 0 0;
+        @include box-shadow-bottom-left();
+    }
+}
+
+aside {
+    width: 30%;
+}

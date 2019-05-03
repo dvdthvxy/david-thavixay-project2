@@ -1,0 +1,10 @@
+.gallery {
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 50px 0;
+        .gallery-item {
+            width: 31%;
+        }
+    }
+}

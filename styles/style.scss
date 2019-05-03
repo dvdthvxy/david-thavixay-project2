@@ -1,0 +1,103 @@
+@import 'partials/setup';
+@import 'partials/header';
+@import 'partials/about';
+@import 'partials/information';
+@import 'partials/roadtrip';
+@import 'partials/events';
+@import 'partials/gallery';
+@import 'partials/blog';
+
+body {
+    background: black;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+p,
+ul,
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    text-transform: capitalize;
+}
+
+a {
+    text-decoration: none;
+    color: $text-color;
+    &:hover {
+        border-bottom: 2px solid $background-color;
+    }
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+    // height: 100%;
+}
+
+h1 {
+    @include font-style($header-btn-font,145.2px, normal, $text-color);
+}
+
+h2 {
+    @include font-style($header-btn-font, 121.5px, 125.6px, $text-color);
+}
+
+h3 {
+    @include font-style($header-btn-font, 45px, 99.8px, $text-color);
+}
+
+h4 {
+    @include font-style($header-btn-font, 40px, 58px, $text-color);
+    letter-spacing: 1.3px;
+}
+
+button {
+    @include font-style($header-btn-font, 25.4px, 41.6px, $text-color);
+    background: $background-color;
+    border: none;
+    color: $fill-color;
+}
+
+nav {
+    @include font-style($nav-body-font, 20px, 29px, $text-color);
+}
+
+.icon {
+    color:$fill-color;
+    background-color: $background-color;
+}
+
+.content {
+    @include font-style($nav-body-font, 20px, 28px, $text-color);
+}
+
+.about,
+.roadtrip,
+.events {
+    background-color: $alt-color;
+}
+
+.information,
+.gallery {
+    background-color: $fill-color;
+}
+
+footer {
+    background-color: $footer-color;
+    text-align: center;
+    padding: 10px 0;
+    color: $text-color;
+}

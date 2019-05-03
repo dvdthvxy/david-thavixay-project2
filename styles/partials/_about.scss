@@ -1,0 +1,28 @@
+.about {
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 100%;
+        padding: 20vh 0 10% 0;
+    }
+}
+
+.new-space,
+.community,
+.blog,
+.get-in-touch {
+    width: 50%;
+    display: flex;
+    margin: 0;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-self: flex-start;
+    border-radius: 50%;
+    font-size: 2rem;
+    padding: 1rem;
+}
