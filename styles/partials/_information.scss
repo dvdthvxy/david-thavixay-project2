@@ -27,12 +27,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 2% 0;
 }
 
 .row:last-of-type {
     flex-direction: row-reverse;
     text-align: right;
-    .description {
+    .content {
         button {
             align-self: flex-end;
         }

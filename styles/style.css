@@ -177,17 +177,20 @@ header .wrapper {
   -ms-flex-pack: justify;
   justify-content: space-between;
   height: 100%; }
-  header .wrapper nav {
-    width: 100%; }
 
-ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-  ul li {
-    padding: 6% 2% 0; }
-    ul li:first-child {
-      padding-left: 0; }
+header nav {
+  width: 100%; }
+  header nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    text-transform: capitalize; }
+    header nav ul li {
+      padding: 6% 2% 0; }
+      header nav ul li:first-child {
+        padding-left: 0; }
 
 h1 {
   padding-top: 10%; }
@@ -259,7 +262,8 @@ h1 {
   flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding: 2% 0; }
 
 .row:last-of-type {
   -webkit-box-orient: horizontal;
@@ -267,7 +271,7 @@ h1 {
   -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
   text-align: right; }
-  .row:last-of-type .description button {
+  .row:last-of-type .content button {
     -ms-flex-item-align: end;
     align-self: flex-end; }
 
@@ -315,7 +319,7 @@ h1 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
-    .events .wrapper .description {
+    .events .wrapper .content {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -357,16 +361,26 @@ h1 {
   background-color: #03697c; }
 
 .article {
-  width: 70%;
+  width: 65%;
   border: 5px solid #08fded;
   border-right: 0px; }
-  .article .image {
+  .article .image img {
     margin: -100px -200px 0 0;
     -webkit-box-shadow: -30px 30px #08fded;
     box-shadow: -30px 30px #08fded; }
 
 aside {
   width: 30%; }
+  aside .wrapper {
+    background-color: #474bb5; }
+  aside ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
 
 body {
   background: black; }
@@ -386,10 +400,12 @@ h3,
 h4 {
   margin: 0; }
 
-ul {
-  list-style: none;
-  padding: 0;
-  text-transform: capitalize; }
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 1rem 0; }
 
 a {
   text-decoration: none;

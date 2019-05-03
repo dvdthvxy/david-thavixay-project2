@@ -27,10 +27,12 @@ h4 {
     margin: 0;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
-    text-transform: capitalize;
+p,
+h1,
+h2,
+h3,
+h4 {
+    margin: 1rem 0;
 }
 
 a {
@@ -44,7 +46,6 @@ a {
 .wrapper {
     width: 80%;
     margin: 0 auto;
-    // height: 100%;
 }
 
 h1 {
