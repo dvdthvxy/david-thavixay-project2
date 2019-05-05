@@ -354,20 +354,29 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
   -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   background-color: #03697c; }
 
 .article {
-  width: 65%;
-  border: 5px solid #08fded;
-  border-right: 0px; }
+  width: 70%; }
   .article .image img {
     margin: -100px -200px 0 0;
     -webkit-box-shadow: -30px 30px #08fded;
     box-shadow: -30px 30px #08fded; }
+
+.article-border {
+  border: 5px solid #08fded;
+  border-right: 0px; }
+  .article-border:first-child .content {
+    padding: 0 10%; }
 
 aside {
   width: 30%; }
@@ -381,6 +390,26 @@ aside {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column; }
+
+.comment-section {
+  width: 85%; }
+  .comment-section .comment {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .comment-section .comment h4 {
+      font-size: 20px;
+      font-weight: bold; }
+    .comment-section .comment .content {
+      width: 70%; }
+
+.profile-pic {
+  width: 15%; }
 
 body {
   background: black; }
