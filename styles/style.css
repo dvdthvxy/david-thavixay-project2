@@ -360,17 +360,18 @@ h1 {
   -webkit-box-direction: reverse;
   -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
   background-color: #03697c; }
 
 .article {
   width: 70%; }
-  .article .image img {
-    margin: -100px -200px 0 0;
-    -webkit-box-shadow: -30px 30px #08fded;
-    box-shadow: -30px 30px #08fded; }
+  .article .image {
+    width: calc(100% - 25px); }
+    .article .image img {
+      -webkit-transform: translate(25px, -100px);
+      -ms-transform: translate(25px, -100px);
+      transform: translate(25px, -100px);
+      -webkit-box-shadow: -30px 30px #08fded;
+      box-shadow: -30px 30px #08fded; }
 
 .article-border {
   border: 5px solid #08fded;
@@ -379,7 +380,8 @@ h1 {
     padding: 0 10%; }
 
 aside {
-  width: 30%; }
+  width: 30%;
+  margin-top: 100px; }
   aside .wrapper {
     background-color: #474bb5; }
   aside ul {
@@ -390,6 +392,12 @@ aside {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column; }
+  aside img {
+    -webkit-transform: translate(-13%, -30px);
+    -ms-transform: translate(-13%, -30px);
+    transform: translate(-13%, -30px); }
+  aside .content {
+    padding-bottom: 50px; }
 
 .comment-section {
   width: 85%; }
@@ -410,6 +418,58 @@ aside {
 
 .profile-pic {
   width: 15%; }
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  form [type="text"],
+  form [type="email"],
+  form textarea {
+    margin-bottom: 20px;
+    padding: 20px 30px;
+    background-color: #03697c;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 300; }
+    form [type="text"]::-webkit-input-placeholder,
+    form [type="email"]::-webkit-input-placeholder,
+    form textarea::-webkit-input-placeholder {
+      color: #f3faff; }
+    form [type="text"]:-ms-input-placeholder,
+    form [type="email"]:-ms-input-placeholder,
+    form textarea:-ms-input-placeholder {
+      color: #f3faff; }
+    form [type="text"]::-ms-input-placeholder,
+    form [type="email"]::-ms-input-placeholder,
+    form textarea::-ms-input-placeholder {
+      color: #f3faff; }
+    form [type="text"]::placeholder,
+    form [type="email"]::placeholder,
+    form textarea::placeholder {
+      color: #f3faff; }
+  form button {
+    width: 100%;
+    margin-bottom: 150px; }
+
+[type="text"],
+[type="email"] {
+  width: 49%;
+  border: none;
+  border-bottom: 2px solid #08fded; }
+
+textarea {
+  width: 100%;
+  height: 300px;
+  border: 2px solid #08fded;
+  resize: none;
+  color: #f3faff; }
 
 body {
   background: black; }
