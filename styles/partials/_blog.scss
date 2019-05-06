@@ -1,9 +1,12 @@
-.blog-layout {
+.layout {
     display: flex;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     flex-direction: row-reverse;
-    // justify-content: flex-end;
-    background-color: $alt-color;
+    .layout.wrapper {
+        width: 90%;
+        margin: 0;
+        margin-left: 10%;
+    }
 }
 
 .article {
@@ -21,26 +24,46 @@
     border: 5px solid $box-shadow-color;
     border-right: 0px;
     &:first-child .content {
-        padding: 0 10%;
+        padding: 0 10% 10% 10%;
     }
 }
 
 aside {
     width: 30%;
-    margin-top: 100px;
+    margin-top: 15%;
     .wrapper {
         background-color: $fill-color;
+        width: 90%;
+        margin: 0;
+        padding-bottom: 20px;
     }
     ul {
         display: flex;
         flex-direction: column;
+        list-style: none;
+        li::before {
+            // From w3school https://www.w3schools.com/howto/howto_css_bullet_color.asp
+            content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+            color: $background-color; /* Change the color */
+            font-weight: bold; /* If you want it to be bold */
+            display: inline-block; /* Needed to add space between the bullet and the text */ 
+            width: 1em; /* Also needed for space (tweak if needed) */
+            margin-left: -2.5rem; /* Also needed for space (tweak if needed) */
+            margin-right: 1rem;
+        }
     }
     img {
-        // transform:scale(1.1,1.1);
-        transform: translate(-13%, -30px);
+        
+        transform: translate(-13%, -30px) scale(1.1);
+        // transform: scale(2);
     }
     .content {
-        padding-bottom: 50px;
+        // padding-bottom: 50px;
+        margin: 0 auto;
+    }
+    h3 {
+        font-size: 20px;
+        line-height: 1rem;
     }
 }
 
@@ -67,4 +90,14 @@ aside {
     max-width: 300px;
     min-width: 100px;
     align-self: flex-start;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-between;
+    width: 125px;
+}
+
+.address p {
+    margin: 0;
 }

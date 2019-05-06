@@ -2,20 +2,21 @@ form {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-bottom: 5%;
     [type="text"],
     [type="email"],
     textarea {
         margin-bottom: 20px;
         padding: 20px 30px;
         background-color: $alt-color;
-        @include font-style($nav-body-font, 20px, 28px, null)
+        @include font-style($nav-body-font, 20px, 28px, null);
         &::placeholder {
             color: $text-color;
         }
     }
     button {
         width: 100%;
-        margin-bottom: 150px;
+        margin-bottom: 10px;
     }
 }
 
@@ -32,4 +33,15 @@ textarea {
     border: 2px solid $background-color;
     resize: none;
     color: $text-color;
+}
+
+.contact-us-form {
+    background-color: $fill-color;
+    padding: 25px;
+    @include box-shadow-bottom-right();
+    transform: translate(0, -15%);
+    textarea,
+    [type] {
+        background-color: $fill-color;
+    }
 }

@@ -145,6 +145,9 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   clip: rect(0 0 0);
   overflow: hidden; }
 
+main {
+  background-color: #03697c; }
+
 .home {
   background-image: url("../assets/images/home-header.jpg");
   background-position: center;
@@ -213,6 +216,9 @@ h1 {
   height: 100%;
   padding: 20vh 0 10% 0; }
 
+.about h3 {
+  line-height: 2rem; }
+
 .new-space,
 .community,
 .blog,
@@ -222,21 +228,43 @@ h1 {
   display: -ms-flexbox;
   display: flex;
   margin: 0; }
+  .new-space .content,
+  .community .content,
+  .blog .content,
+  .get-in-touch .content {
+    width: calc(100% - 64px); }
+
+.icon-container {
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  position: relative;
+  background-color: #08fded;
+  margin-right: 10px; }
 
 .icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-item-align: center;
+  align-self: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  -ms-flex-item-align: start;
-  align-self: flex-start;
-  border-radius: 50%;
-  font-size: 2rem;
-  padding: 1rem; }
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.fa-home,
+.fa-users,
+.fa-file,
+.fa-phone {
+  font-size: 2rem; }
 
 .information .information-pic {
   width: 45%; }
@@ -350,17 +378,18 @@ h1 {
   .gallery .wrapper .gallery-item {
     width: 31%; }
 
-.blog-layout {
+.layout {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
   -ms-flex-direction: row-reverse;
-  flex-direction: row-reverse;
-  background-color: #03697c; }
+  flex-direction: row-reverse; }
+  .layout .layout.wrapper {
+    width: 90%;
+    margin: 0;
+    margin-left: 10%; }
 
 .article {
   width: 70%; }
@@ -377,13 +406,16 @@ h1 {
   border: 5px solid #08fded;
   border-right: 0px; }
   .article-border:first-child .content {
-    padding: 0 10%; }
+    padding: 0 10% 10% 10%; }
 
 aside {
   width: 30%;
-  margin-top: 100px; }
+  margin-top: 15%; }
   aside .wrapper {
-    background-color: #474bb5; }
+    background-color: #474bb5;
+    width: 90%;
+    margin: 0;
+    padding-bottom: 20px; }
   aside ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -391,13 +423,31 @@ aside {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column; }
+    flex-direction: column;
+    list-style: none; }
+    aside ul li::before {
+      content: "\2022";
+      /* Add content: \2022 is the CSS Code/unicode for a bullet */
+      color: #08fded;
+      /* Change the color */
+      font-weight: bold;
+      /* If you want it to be bold */
+      display: inline-block;
+      /* Needed to add space between the bullet and the text */
+      width: 1em;
+      /* Also needed for space (tweak if needed) */
+      margin-left: -2.5rem;
+      /* Also needed for space (tweak if needed) */
+      margin-right: 1rem; }
   aside img {
-    -webkit-transform: translate(-13%, -30px);
-    -ms-transform: translate(-13%, -30px);
-    transform: translate(-13%, -30px); }
+    -webkit-transform: translate(-13%, -30px) scale(1.1);
+    -ms-transform: translate(-13%, -30px) scale(1.1);
+    transform: translate(-13%, -30px) scale(1.1); }
   aside .content {
-    padding-bottom: 50px; }
+    margin: 0 auto; }
+  aside h3 {
+    font-size: 20px;
+    line-height: 1rem; }
 
 .comment-section {
   width: 90%; }
@@ -424,6 +474,18 @@ aside {
   -ms-flex-item-align: start;
   align-self: flex-start; }
 
+.social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 125px; }
+
+.address p {
+  margin: 0; }
+
 form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -432,7 +494,8 @@ form {
   flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding-bottom: 5%; }
   form [type="text"],
   form [type="email"],
   form textarea {
@@ -461,7 +524,7 @@ form {
       color: #f3faff; }
   form button {
     width: 100%;
-    margin-bottom: 150px; }
+    margin-bottom: 10px; }
 
 [type="text"],
 [type="email"] {
@@ -475,6 +538,18 @@ textarea {
   border: 2px solid #08fded;
   resize: none;
   color: #f3faff; }
+
+.contact-us-form {
+  background-color: #474bb5;
+  padding: 25px;
+  -webkit-box-shadow: 30px 30px #08fded;
+  box-shadow: 30px 30px #08fded;
+  -webkit-transform: translate(0, -15%);
+  -ms-transform: translate(0, -15%);
+  transform: translate(0, -15%); }
+  .contact-us-form textarea,
+  .contact-us-form [type] {
+    background-color: #474bb5; }
 
 body {
   background: black; }
@@ -553,15 +628,15 @@ nav {
   font-weight: 300; }
 
 .icon {
-  color: #474bb5;
-  background-color: #08fded; }
+  color: #474bb5; }
 
 .content {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   line-height: 28px;
   color: #f3faff;
-  font-weight: 300; }
+  font-weight: 300;
+  width: 100%; }
 
 .about,
 .roadtrip,
