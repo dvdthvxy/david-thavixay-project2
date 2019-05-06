@@ -51,7 +51,7 @@ aside {
         justify-content: space-around;
         .content {
             width: 80%;
-            padding-bottom: 20px;
+            padding-bottom: 10%;
             margin: 0;
             h4 {
                 font-size: 20px;
@@ -64,5 +64,7 @@ aside {
 }
 .profile-pic {
     width: 10%;
+    max-width: 300px;
+    min-width: 100px;
     align-self: flex-start;
 }

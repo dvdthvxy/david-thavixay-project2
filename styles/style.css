@@ -409,7 +409,7 @@ aside {
     justify-content: space-around; }
     .comment-section .comment .content {
       width: 80%;
-      padding-bottom: 20px;
+      padding-bottom: 10%;
       margin: 0; }
       .comment-section .comment .content h4 {
         font-size: 20px;
@@ -419,6 +419,8 @@ aside {
 
 .profile-pic {
   width: 10%;
+  max-width: 300px;
+  min-width: 100px;
   -ms-flex-item-align: start;
   align-self: flex-start; }
 
