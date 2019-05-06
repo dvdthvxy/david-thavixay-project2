@@ -400,24 +400,27 @@ aside {
     padding-bottom: 50px; }
 
 .comment-section {
-  width: 85%; }
+  width: 90%; }
   .comment-section .comment {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
-    justify-content: space-around;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
-    .comment-section .comment h4 {
-      font-size: 20px;
-      font-weight: bold; }
+    justify-content: space-around; }
     .comment-section .comment .content {
-      width: 70%; }
+      width: 80%;
+      padding-bottom: 20px;
+      margin: 0; }
+      .comment-section .comment .content h4 {
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 1rem;
+        margin: 0; }
 
 .profile-pic {
-  width: 15%; }
+  width: 10%;
+  -ms-flex-item-align: start;
+  align-self: flex-start; }
 
 form {
   display: -webkit-box;
@@ -481,12 +484,7 @@ img {
   object-fit: contain;
   display: block; }
 
-p,
-ul,
-h1,
-h2,
-h3,
-h4 {
+ul {
   margin: 0; }
 
 p,
