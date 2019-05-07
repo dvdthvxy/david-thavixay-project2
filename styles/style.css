@@ -680,6 +680,14 @@ footer {
     .layout .layout.wrapper {
       width: 80%;
       margin: 0 auto; }
+  header nav {
+    padding-top: 1%; }
+    header nav ul {
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      header nav ul li {
+        padding: 0; }
   .article,
   aside {
     width: 100%; }
@@ -688,9 +696,10 @@ footer {
   aside h3 {
     padding-top: 20px; }
   aside .wrapper {
-    width: 100%; }
-    aside .wrapper .content {
-      padding: 0 20px; }
+    width: 100%;
+    padding-bottom: 0; }
+  aside .content {
+    padding: 0 20px 15px; }
   .information .information-pic {
     width: 100%; }
   .row:first-of-type .information-pic {

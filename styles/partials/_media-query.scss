@@ -14,6 +14,18 @@
         }
     }
 
+    header {
+        nav {
+            padding-top: 1%;
+            ul {
+                justify-content: space-between;
+                li {
+                    padding: 0;
+                }
+            }
+        }
+    }
+
     .article,
     aside {
         width: 100%;
@@ -28,10 +40,12 @@
         }
         .wrapper {
             width: 100%;
-            .content {
-                padding: 0 20px;
-            }
+            padding-bottom: 0;
         }
+    }
+
+    aside .content {
+        padding: 0 20px 15px;
     }
         
     .information {
@@ -53,9 +67,6 @@
     }
 
     .row {
-        // display: flex;
-        // flex-wrap: wrap;
-        // justify-content: space-between;
         padding: 0;
     }
 
