@@ -516,7 +516,8 @@ form {
     font-family: "Roboto", sans-serif;
     font-size: 20px;
     line-height: 28px;
-    font-weight: 300; }
+    font-weight: 300;
+    color: #f3faff; }
     form [type="text"]::-webkit-input-placeholder,
     form [type="email"]::-webkit-input-placeholder,
     form textarea::-webkit-input-placeholder {
@@ -547,8 +548,7 @@ textarea {
   width: 100%;
   height: 300px;
   border: 2px solid #08fded;
-  resize: none;
-  color: #f3faff; }
+  resize: none; }
 
 .contact-us-form {
   background-color: #474bb5;
