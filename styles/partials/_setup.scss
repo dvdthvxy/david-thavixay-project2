@@ -14,6 +14,7 @@ $box-shadow-color: #08fded;
 $fill-color: #474bb5;
 $alt-color: #03697c;
 $footer-color: #044779;
+$active-color: orange;
 
 @mixin box-shadow-bottom-right() {
     box-shadow: 30px 30px $box-shadow-color;

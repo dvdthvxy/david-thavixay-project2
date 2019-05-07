@@ -34,9 +34,31 @@ h4 {
 a {
     text-decoration: none;
     color: $text-color;
-    &:hover {
+    &:hover, &:focus {
         border-bottom: 2px solid $background-color;
     }
+}
+
+.fa-facebook-f:hover, .fa-facebook-f:focus, 
+.fa-twitter:hover, .fa-twitter:focus, 
+.fa-instagram:hover, .fa-instagram:focus, 
+.fa-whatsapp:hover, .fa-whatsapp:focus,  {
+    color: $background-color;
+}
+
+a:active,
+.fa-facebook-f:active,
+.fa-twitter:active,
+.fa-instagram:active,
+.fa-whatsapp:active {
+    color: $active-color;
+}
+
+button:focus {
+    border: 3px solid $active-color;
+}
+button:active {
+    background-color: $active-color;
 }
 
 .wrapper {
@@ -44,6 +66,7 @@ a {
     margin: 0 auto;
 }
 
+// Zoe says its fine to use hard pixels for font size :P
 h1 {
     @include font-style($header-btn-font,145.2px, normal, $text-color);
 }
@@ -74,7 +97,6 @@ nav {
 
 .icon {
     color:$fill-color;
-    // background-color: $background-color;
 }
 
 .content {

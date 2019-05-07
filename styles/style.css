@@ -450,9 +450,9 @@ aside {
       /* Also needed for space (tweak if needed) */
       margin-right: 1rem; }
   aside img {
-    -webkit-transform: translate(-13%, -30px) scale(1.1);
-    -ms-transform: translate(-13%, -30px) scale(1.1);
-    transform: translate(-13%, -30px) scale(1.1); }
+    -webkit-transform: translate(-32.5%, -10%) scale(1.18);
+    -ms-transform: translate(-32.5%, -10%) scale(1.18);
+    transform: translate(-32.5%, -10%) scale(1.18); }
   aside .content {
     margin: 0 auto; }
   aside h3 {
@@ -585,8 +585,27 @@ h4 {
 a {
   text-decoration: none;
   color: #f3faff; }
-  a:hover {
+  a:hover, a:focus {
     border-bottom: 2px solid #08fded; }
+
+.fa-facebook-f:hover, .fa-facebook-f:focus,
+.fa-twitter:hover, .fa-twitter:focus,
+.fa-instagram:hover, .fa-instagram:focus,
+.fa-whatsapp:hover, .fa-whatsapp:focus {
+  color: #08fded; }
+
+a:active,
+.fa-facebook-f:active,
+.fa-twitter:active,
+.fa-instagram:active,
+.fa-whatsapp:active {
+  color: orange; }
+
+button:focus {
+  border: 3px solid orange; }
+
+button:active {
+  background-color: orange; }
 
 .wrapper {
   width: 80%;

@@ -16,10 +16,10 @@
         <div class="wrapper">
             <nav>
                 <ul>
-                    <li><a href="index.html">home</a></li>
-                    <li><a href="index.html#about">about</a></li>
-                    <li><a href="blog.html">blog</a></li>
-                    <li><a href="contact.html">contact</a></li>
+                    <li><a href="index.html" tabindex="1">home</a></li>
+                    <li><a href="index.html#about" tabindex="2">about</a></li>
+                    <li><a href="blog.html" tabindex="3">blog</a></li>
+                    <li><a href="contact.html" tabindex="4">contact</a></li>
                 </ul>
             </nav>
     
@@ -29,37 +29,39 @@
 
     <main>
         <div class="layout wrapper">
-        <div class="">
             <form action="" class="wrapper contact-us-form">
                 <label for="name" class="visuallyHidden">Enter your name</label>
                 <input type="text" name="name" id="name" placeholder="Name" required>
                 <label for="email" class="visuallyHidden">Enter your email</label>
                 <input type="email" name="email" id="email" placeholder="Email" required>
                 <label for="comment-box" class="visuallyHidden">Enter your comment</label>
-                <textarea id="comment-box" required>Comment</textarea>
+                <textarea id="comment-box" required placeholder="Comment"></textarea>
                 <button>
                     Post Comment
                 </button>
             </form>
-        </div>
 
-        <aside>
-            <div class="content">
-                <div class="social-media">
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-whatsapp"></i>
+            <aside>
+                <div class="content">
+                    <div class="social-media">
+                        <i aria-hidden="true" class="fab fa-facebook-f" tabindex="5"></i>
+                        <span class="sr-only">Facebook</span>
+                        <i aria-hidden="true" class="fab fa-instagram" tabindex="6"></i>
+                        <span class="sr-only">Instagram</span>
+                        <i aria-hidden="true" class="fab fa-twitter" tabindex="7"></i>
+                        <span class="sr-only">Twitter</span>
+                        <i aria-hidden="true" class="fab fa-whatsapp" tabindex="8"></i>
+                        <span class="sr-only">Whatsapp</span>
+                    </div>
+                    <p>info@email.com</p>
+                    <div class="address" tabindex="9">
+                        <p>123-456-7890</p>
+                        <p>123 Queen Street West, Unit 10</p>
+                        <p>Toronto, Ontario</p>
+                        <p>M5V2D5</p>
+                    </div>
                 </div>
-                <p>info@email.com</p>
-                <div class="address">
-                    <p>123-456-7890</p>
-                    <p>123 Queen Street West, Unit 10</p>
-                    <p>Toronto, Ontario</p>
-                    <p>M5V2D5</p>
-                </div>
-            </div>
-        </aside>
+            </aside>
         </div>
     </main>
     <footer>
