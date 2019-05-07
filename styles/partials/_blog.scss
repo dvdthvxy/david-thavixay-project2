@@ -2,6 +2,7 @@
     display: flex;
     // flex-wrap: wrap;
     flex-direction: row-reverse;
+    justify-content: space-between;
     .layout.wrapper {
         width: 90%;
         margin: 0;
@@ -30,7 +31,7 @@
 
 aside {
     width: 30%;
-    margin-top: 15%;
+    margin-top: 8%;
     .wrapper {
         background-color: $fill-color;
         width: 90%;
@@ -52,13 +53,10 @@ aside {
             margin-right: 1rem;
         }
     }
-    img {
-        
+    img {  
         transform: translate(-13%, -30px) scale(1.1);
-        // transform: scale(2);
     }
     .content {
-        // padding-bottom: 50px;
         margin: 0 auto;
     }
     h3 {
@@ -90,6 +88,7 @@ aside {
     max-width: 300px;
     min-width: 100px;
     align-self: flex-start;
+    margin-right: 15px;
 }
 
 .social-media {

@@ -16,6 +16,9 @@
     width: 30%;
     margin: 0 0 30px 30px;
     @include box-shadow-bottom-left();
+    img {
+        object-fit: cover;
+    }
 }
 
 

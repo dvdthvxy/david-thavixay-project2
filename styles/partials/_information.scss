@@ -2,6 +2,9 @@
 .information {
     .information-pic {
         width: 45%;
+        img {
+            object-fit: cover;
+        }
     }
 }
 

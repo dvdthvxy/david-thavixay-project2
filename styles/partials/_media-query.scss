@@ -1,0 +1,212 @@
+@media (max-width: 1420px) {
+    .skaterboi {
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    .layout {
+        display: flex;
+        flex-direction: column;
+        .layout.wrapper {
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+
+    .article,
+    aside {
+        width: 100%;
+    }
+
+    aside {
+        img {
+            display: none;
+        }
+        h3 {
+            padding-top: 20px;
+        }
+        .wrapper {
+            width: 100%;
+            .content {
+                padding: 0 20px;
+            }
+        }
+    }
+        
+    .information {
+        .information-pic {
+            width: 100%;
+        }
+    }
+
+    .row:first-of-type {
+        .information-pic {
+            margin-top: 0;
+        }
+    }
+
+    .row:last-of-type {
+        .information-pic {
+            margin-bottom: 0;
+        }
+    }
+
+    .row {
+        // display: flex;
+        // flex-wrap: wrap;
+        // justify-content: space-between;
+        padding: 0;
+    }
+
+    .row:last-of-type {
+        flex-direction: row;
+        text-align: left;
+        .content {
+            button {
+                align-self: flex-start;
+            }
+        }
+    }
+
+    .information {
+        .content {
+            width: 100%;
+            padding: 10%;
+            button {
+                align-self: flex-start;
+            }
+        }
+    }
+
+    .new-space,
+    .community,
+    .blog,
+    .get-in-touch {
+        width: 100%;
+        .content {
+            width: calc(100% - 64px);
+        }
+    }
+
+    .contact-us-form.wrapper {
+        width: 100%;
+    }
+
+    .events {
+        .wrapper {
+            flex-direction: column;
+            .content {
+                margin: 0;
+                width: 100%;
+            }
+        }
+    }
+
+    .event-pic {
+        width: 60%;
+    }
+}
+
+@media (max-width: 750px) {
+
+    .wrapper {
+        width: 95%;
+    }
+
+    .layout {
+        .layout.wrapper {
+            width: 95%;
+        }
+    }
+
+    .contact-page {
+        .wrapper {
+            width: 95%;
+        }
+    }
+
+
+    [type="text"],
+    [type="email"] {
+        width: 100%;
+    }
+    
+    .row:first-of-type,
+    .row:last-of-type {
+        .information-pic {
+            box-shadow: none;
+        }
+    }
+
+    .information {
+        .content {
+            padding: 10% 2.5%;
+            button {
+                align-self: flex-start;
+            }
+        }
+    }
+
+    .roadtrip {
+        padding: 0 2.5%;
+        h3 {
+            line-height: 2rem;
+        }
+    }
+
+    .contact-us-form {
+        box-shadow: none;
+    }
+    header{
+        h1 {
+            font-size: 100px;
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+    .article-border {
+        border: 5px solid $box-shadow-color;
+        border-right: 0px;
+        &:first-child .content {
+            padding: 0 2.5% 10%;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    header {
+        h1 {
+            font-size: 60px;
+        }
+    }
+
+    h2 {
+        font-size: 60px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .gallery {
+        .wrapper {
+            flex-wrap: wrap;
+            .gallery-item {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    .comment {
+        flex-direction: column;
+    }
+
+    .profile-pic {
+        margin-bottom: 10px;
+    }
+
+    .contact-us-form {
+        transform: translate(0, -10%);
+    }
+}
