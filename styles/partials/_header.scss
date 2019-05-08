@@ -1,3 +1,5 @@
+// Header section styling
+
 .home {
     @include splash("../assets/images/home-header.jpg", center, cover, 100vh);
 }

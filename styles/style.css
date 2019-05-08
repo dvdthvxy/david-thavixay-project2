@@ -145,9 +145,6 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   clip: rect(0 0 0);
   overflow: hidden; }
 
-main {
-  background-color: #03697c; }
-
 .home {
   background-image: url("../assets/images/home-header.jpg");
   background-position: center;
@@ -218,7 +215,7 @@ h1 {
   padding: 20vh 0 10% 0; }
 
 .about h3 {
-  line-height: 2rem; }
+  line-height: 32px; }
 
 .new-space,
 .community,
@@ -265,7 +262,7 @@ h1 {
 .fa-users,
 .fa-file,
 .fa-phone {
-  font-size: 2rem; }
+  font-size: 32px; }
 
 .information .information-pic {
   width: 45%; }
@@ -444,11 +441,11 @@ aside {
       /* If you want it to be bold */
       display: inline-block;
       /* Needed to add space between the bullet and the text */
-      width: 1em;
+      width: 16px;
       /* Also needed for space (tweak if needed) */
-      margin-left: -2.5rem;
+      margin-left: -40px;
       /* Also needed for space (tweak if needed) */
-      margin-right: 1rem; }
+      margin-right: 16px; }
   aside img {
     -webkit-transform: translate(-32.5%, -10%) scale(1.18);
     -ms-transform: translate(-32.5%, -10%) scale(1.18);
@@ -585,8 +582,9 @@ h4 {
 a {
   text-decoration: none;
   color: #f3faff; }
-  a:hover, a:focus {
-    border-bottom: 2px solid #08fded; }
+
+nav a:hover, nav a:focus {
+  border-bottom: 2px solid #08fded; }
 
 .fa-facebook-f:hover, .fa-facebook-f:focus,
 .fa-twitter:hover, .fa-twitter:focus,
@@ -602,7 +600,7 @@ a:active,
   color: orange; }
 
 button:focus {
-  border: 3px solid orange; }
+  border: 2px solid orange; }
 
 button:active {
   background-color: orange; }
@@ -657,9 +655,6 @@ nav {
   color: #f3faff;
   font-weight: 300; }
 
-.icon {
-  color: #474bb5; }
-
 .content {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
@@ -667,6 +662,12 @@ nav {
   color: #f3faff;
   font-weight: 300;
   width: 100%; }
+
+main {
+  background-color: #03697c; }
+
+.icon {
+  color: #474bb5; }
 
 .about,
 .roadtrip,

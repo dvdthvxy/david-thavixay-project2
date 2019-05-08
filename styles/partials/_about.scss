@@ -1,3 +1,5 @@
+// About section styling
+
 .about {
     .wrapper {
         display: flex;
@@ -7,7 +9,7 @@
         padding: 20vh 0 10% 0;
     }
     h3 {
-        line-height: 2rem;
+        line-height: 32px;
     }
 }
 
@@ -24,13 +26,7 @@
 }
 
 .icon-container {
-    // display: flex;
-    // justify-content: center;
-    // align-content: center;
-    // align-self: flex-start;
     border-radius: 50%;
-    // font-size: 1rem;
-    // padding: 1rem;
     width: 64px;
     height: 64px;
     position: relative;
@@ -54,5 +50,5 @@
 .fa-users,
 .fa-file,
 .fa-phone {
-    font-size: 2rem;
+    font-size: 32px;
 }

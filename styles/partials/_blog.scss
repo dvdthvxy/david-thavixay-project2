@@ -1,6 +1,7 @@
+// Blog stylings
+
 .layout {
     display: flex;
-    // flex-wrap: wrap;
     flex-direction: row-reverse;
     justify-content: space-between;
     .layout.wrapper {
@@ -48,9 +49,9 @@ aside {
             color: $background-color; /* Change the color */
             font-weight: bold; /* If you want it to be bold */
             display: inline-block; /* Needed to add space between the bullet and the text */ 
-            width: 1em; /* Also needed for space (tweak if needed) */
-            margin-left: -2.5rem; /* Also needed for space (tweak if needed) */
-            margin-right: 1rem;
+            width: 16px; /* Also needed for space (tweak if needed) */
+            margin-left: -40px; /* Also needed for space (tweak if needed) */
+            margin-right: 16px;
         }
     }
     img {  

@@ -6,6 +6,8 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 
 .visuallyHidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
 
+// Variables
+
 $header-btn-font: 'Walter Turncoat', cursive;
 $nav-body-font: 'Roboto', sans-serif;
 $text-color: #f3faff;
@@ -15,6 +17,8 @@ $fill-color: #474bb5;
 $alt-color: #03697c;
 $footer-color: #044779;
 $active-color: orange;
+
+// Mixins
 
 @mixin box-shadow-bottom-right() {
     box-shadow: 30px 30px $box-shadow-color;
@@ -37,8 +41,4 @@ $active-color: orange;
     background-position: $bg-position;
     background-size: $bg-size;
     height: $height;
-}
-
-main {
-    background-color: $alt-color;
 }
